@@ -123,18 +123,12 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-
-# EMAIL_USE_TLS = True
-# EMAIL_PORT = 587  # 465
-# EMAIL_HOST = 'smtp.gmail.com'
-# EMAIL_HOST_USER = 'clickworldacademy@gmail.com'
-# EMAIL_HOST_PASSWORD = 'Click2021*'
-# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
+EMAIL_HOST_USER = 'YandexT1234'
+EMAIL_HOST_PASSWORD = 'ewegksdmotasqoor'
+DEFAULT_FROM_EMAIL = 'YandexT1234@gmail.com'
+# SERVER_EMAIL = 'info@biome.consulting'
 EMAIL_USE_TLS = True
-EMAIL_HOST = 'smtp.live.com'
-EMAIL_HOST_USER = "aryabhatta_ics@outlook.com"
-EMAIL_HOST_PASSWORD = "Arya2022*"
+ADMINS = [('John', 'info@biome.consulting'), ]
